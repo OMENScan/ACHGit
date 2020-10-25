@@ -1,0 +1,19 @@
+*****************************************************************************************
+* AChGit - Downloads Utilities, and Stage 2 AChoir from Github                          *
+* AChoirX /get:https://github.com/OMENScan/ACHGit/blob/main/AChGit.Acq /ini:AChGit.Acq  *
+*****************************************************************************************
+SET:CopyPath=Part
+SAY:
+SAY: AChoir will pull artifacts and telemetry of forensic value for investigation.
+SAY:
+SAY: * * *   Please MAKE SURE you are running this as an Administrator  * * * 
+SAY: * * * Administrator right are required for many of these utilities * * * 
+SAY:
+SAY:
+SAY: 0. Downloading and Extracting Utilities...
+DIR:\
+GET:https://github.com/OMENScan/ACHGit/blob/main/AChoirX.zip &Dir\AChoirX.zip
+SAY:
+UNZ:&Dir\AChoirX.zip &Dir
+SAY:
+INI:AChoir.ACQ
